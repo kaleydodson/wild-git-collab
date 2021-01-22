@@ -52,6 +52,11 @@ ggplot(data = diamonds, aes(x = depth, y = carat)) +
 ```
 
 ```{r break-it-2}
+diamonds_subset <- diamonds %>% 
+  filter(carat<0.30)
+
+ggplot(data = diamonds_subset, aes(x = depth, y = carat)) +
+  geom_point()
 
 ```
 
