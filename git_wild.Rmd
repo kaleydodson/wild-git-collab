@@ -35,14 +35,28 @@ ggplot(data = diamonds, aes(x = color, y = carat) +
 ## PART B: Make problems
 
 ```{r break-it-1}
+
+ggplot(data = diamonds, aes(x = carat, y = depth)) +
+  geom_line() +
+  theme_minimal()
+
+# math!
+5*10
+
 ggplot(data = diamonds, aes(x = depth, y = carat)) +
   geom_point() +
   theme_void()
 
 # breaking things!!!
+
 ```
 
 ```{r break-it-2}
+diamonds_subset <- diamonds %>% 
+  filter(carat<0.30)
+
+ggplot(data = diamonds_subset, aes(x = depth, y = carat)) +
+  geom_point()
 
 ```
 
