@@ -38,6 +38,8 @@ ggplot(data = diamonds, aes(x = color, y = carat) +
 ggplot(data = diamonds, aes(x = depth, y = carat)) +
   geom_point() +
   theme_void()
+
+# breaking things!!!
 ```
 
 ```{r break-it-2}
